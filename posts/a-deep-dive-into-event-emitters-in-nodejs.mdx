@@ -36,15 +36,15 @@ The `EventEmitter` is a class that comes from Node.js's built-in `events` module
 Let’s start with a basic example. First, you’ll need to import the `EventEmitter` from Node.js’s `events` module and instantiate it.
 
 ```javascript
-const EventEmitter  = require('events);
-const eventEmitter = new EventEmitter()
+const EventEmitter = require('events');
+const eventEmitter = new EventEmitter();
 
-//define an event listner
-eventEmitter.on('great', (name) => {
-console.log(`hello , ${name}!`);
-})
+// Define an event listener
+eventEmitter.on('greet', (name) => {
+  console.log(`Hello, ${name}!`);
+});
 
-//emit the greet event
+// Emit the greet event
 eventEmitter.emit('greet', 'Steve');
 ```
 
